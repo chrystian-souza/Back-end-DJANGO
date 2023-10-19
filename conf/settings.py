@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # MY APPS ############################################AQUI#####foi consigurado para rodar os apps criados
+    # MY APPS ############################################AQUI#####foi consigurado para rodar os apps que foram criados
     'stockADS'
 ]
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'conf.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], ############################AQUI######## foi configurado
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], ############################AQUI######## foi configurado iniciando no template 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'templates/static') ########################AQUI#######Foi consigurado para puxar CSS
+    os.path.join(BASE_DIR, 'templates/static') ########################AQUI#######Foi consigurado para puxar CSS/javaScript/imagens
 ]
 
 # Default primary key field type
