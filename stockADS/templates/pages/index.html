@@ -9,10 +9,37 @@
     <link rel="stylesheet" href="{% static 'css/global.css' %}">
 </head>
 <body>
-
-    <nav>
+    <header>
+        <nav>
+           <label class="nav" for="">EstoqueADS 
         
-    </nav>
+
+            </label>
+        </nav>
+    </header>
+    <main>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>cod</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>batata</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates et dolore earum commodi velit amet quo hic unde ducimus illum, sit itaque, nobis debitis laboriosam molestias mollitia perspiciatis ex eos!</td>
+                        <td>feijão</td>
+                        <td>salgadinho</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </main>
     {% for produto in produtos %}
     <h1>{{produto.name}}</h1>
     {%endfor%}

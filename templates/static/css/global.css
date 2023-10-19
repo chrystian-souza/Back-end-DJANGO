@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
 
     background-color: black;
@@ -8,4 +14,44 @@ h1 {
     /* font-size:  40px; */
     font: bold 40pt Arial;
     
+}
+nav {
+    background-color: rgb(1, 68, 68);
+    height: 100px;
+    display: flex;
+    align-items: center;
+   
+}
+.nav {
+    display: flex;
+   background-color: aqua;
+}
+.tabela {
+    background-color: rgb(207, 207, 205);
+    height: 50vh;
+    width: 250vh;
+    margin-top: 30px;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    gap: 325px;
+    background-color: aqua;
+   
+}
+thead {
+    background-color: yellow;
+    border: 1px solid black; 
+   
+}
+    
+td {
+    border: 1px solid black;
+   
+  
 }
