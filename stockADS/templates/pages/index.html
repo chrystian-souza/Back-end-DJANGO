@@ -29,18 +29,21 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for produto in produtos %}
                     <tr>
                         <td>batata</td>
-                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates et dolore earum commodi velit amet quo hic unde ducimus illum, sit itaque, nobis debitis laboriosam molestias mollitia perspiciatis ex eos!</td>
+                        <td>
+                           <a href="{% url 'product-detail' produto.id %}"> {{produto.name}}</td> </a>
                         <td>feijão</td>
                         <td>salgadinho</td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
-            
+           
         </div>
     </main>
-    {{produtos.name}}
+   
     
 </body>
 </html>
