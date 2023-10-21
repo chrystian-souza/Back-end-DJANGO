@@ -11,10 +11,7 @@
 <body>
     <header>
         <nav>
-           <label class="nav" for="">EstoqueADS 
-        
-
-            </label>
+           <label  for="">EstoqueADS  </label>   
         </nav>
     </header>
     <main>
@@ -22,7 +19,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th>cod</th>
+                        <th>Codigo</th>
                         <th>Nome</th>
                         <th>Preço</th>
                         <th>Quantidade</th>
@@ -32,8 +29,7 @@
                     {% for produto in produtos %}
                     <tr>
                         <td>batata</td>
-                        <td>
-                           <a href="{% url 'product-detail' produto.id %}"> {{produto.name}}</td> </a>
+                        <td><a href="{% url 'product-detail' produto.id %}"> {{produto.name}} </a></td>
                         <td>feijão</td>
                         <td>salgadinho</td>
                     </tr>
