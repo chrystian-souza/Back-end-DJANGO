@@ -11,12 +11,13 @@
 <body>
     <header>
         <nav>
-           <label  for="">EstoqueADS  </label>   
+           <label  for="">EstoqueADS</label>   
         </nav>
     </header>
     <main>
+        
         <div class="tabela">
-        <a href="{% url 'add_product' %}">botao</a>
+           
         <!-- <button href="{% url 'add_product' %}">botao</button> -->
             <table>
                 <thead>
@@ -30,16 +31,20 @@
                 <tbody>
                     {% for produto in produtos %}
                     <tr>
-                        <td>batata</td>
+                        <td><a href="{% url 'product-detail' produto.id %}"> {{produto.cod}} </a></td>
                         <td><a href="{% url 'product-detail' produto.id %}"> {{produto.name}} </a></td>
-                        <td>feijão</td>
-                        <td>salgadinho</td>
+                        <td><a href="{% url 'product-detail' produto.id %}"> {{produto.price}} </a></td>
+                        <td><a href="{% url 'product-detail' produto.id %}"> {{produto.qtd}} </a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
            
         </div>
+        <div class="botao-add"> 
+            <a href="{% url 'add_product' %}">Adicionar</a>
+        </div>
+       
     </main>
    
     

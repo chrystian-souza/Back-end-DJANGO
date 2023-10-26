@@ -11,10 +11,14 @@
 </head>
 <body>
 
-    <form method="POST" class="container" action="">
+    <form method="POST" class="container" action="" enctype="multipart/form-data"> {% csrf_token %}  
         <input type="text" name="name" placeholder=" Nome">
-        <input type="text" name="category" placeholder=" Category">
-        <input type="text" name="picture" placeholder=" Picture">
+        <select name="category">
+            {% for category in  categories %}
+            <option value="{{category.id}} ">{{ category.name }}</option>
+            {% endfor %}
+        </select>
+        <input type="file" name="picture" placeholder=" Picture">
         <input type="text" name="price" placeholder=" Price">
         <input type="text" name="description" placeholder=" Description">
         <input type="text" name="qtd" placeholder=" Qtd">
