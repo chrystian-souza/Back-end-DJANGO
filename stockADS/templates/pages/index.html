@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">   <!-- ctrl + f5 para atualizar a pagina e limpar o cache * -->
 </head>
 <body>
     <header>
         <nav>
-           <label  for="">EstoqueADS</label>   
+           <label  for="">EstoqueADS</label> 
+           <form action="{% url 'search-product' %}">
+                <input type="search" name="q">
+                <button >Buscar</button> 
+            </form> 
         </nav>
     </header>
     <main>
-        
+        <div class="botao-add"> 
+            <a href="{% url 'add_product' %}">Adicionar</a>
+        </div>
         <div class="tabela">
            
         <!-- <button href="{% url 'add_product' %}">botao</button> -->
@@ -41,9 +47,7 @@
             </table>
            
         </div>
-        <div class="botao-add"> 
-            <a href="{% url 'add_product' %}">Adicionar</a>
-        </div>
+      
        
     </main>
    

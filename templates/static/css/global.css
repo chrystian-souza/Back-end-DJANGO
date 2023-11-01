@@ -6,21 +6,20 @@
 
 label {
     font: normal 20pt Arial;
-    color: #3498db;
+    height: 10px;
     margin-left: 10px;
-    border: solid 2px #3498db;
-    background-color: white;
+    background-color: rgb(216, 24, 24);
     border-radius: 15px;
 }
 
-body{
+/* body{
 
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(160, 150, 150);
    
-}
+} */
 
 nav {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(207, 191, 191);
     height: 100px;
     display: flex;
     align-items: center;
@@ -30,15 +29,15 @@ nav {
 
 table {
     width: 50%;
-    background-color:antiquewhite;
+    background-color:rgb(243, 151, 31);
     margin-left: 25%;
     margin-top: 2%;
-    /* border-collapse: collapse; */
+    border-collapse: collapse;
     font-family: Arial, sans-serif;
 }
 
 th {
-    background-color: #3498db;
+    
     color: white;
     font-weight: bold;
 }
@@ -51,13 +50,13 @@ td {
     
 }
 
-/* a {
+ a {
     text-decoration: none;
     color: black;
-} */
+} 
 
 
-.botao-add {
+ .botao-add {
 
     background-color: #3498db;
     font: normal 10pt Arial;
@@ -65,5 +64,5 @@ td {
     width: 10px;
     height: 10px;
     
-}
+} 
 
