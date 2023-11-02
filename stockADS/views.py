@@ -15,7 +15,7 @@ def product_detail(request, id):
 
 def search_product(request):
     q = request.GET.get('q')
-    produtos = Products.objects.filter(name=q)  #__icontains
+    produtos = Products.objects.filter(name__icontains=q)  #__icontains
     return render(request, 'pages/index.html', {'produtos':produtos})
 
 def delete_product(request, id):
@@ -23,13 +23,19 @@ def delete_product(request, id):
     product.delete()
     return redirect('home')
 
+def sell_product(request, id):
+    product = Products.objects.get(id=id)
+    product.qtd -= 1
+    product.save()
+    return redirect('product-detail', id)
+
 def add_product(request):
 
     if request.method == 'POST':
         name = request.POST.get('name')
         cod = randint(100, 10000)
         category = request.POST.get('category')
-        picture = request.get('picture')
+        picture = request.FILES.get('picture')
         price = request.POST.get('price')
         description = request.POST.get('description')
         qtd = request.POST.get('qtd')
