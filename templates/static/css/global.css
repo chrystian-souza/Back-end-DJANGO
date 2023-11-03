@@ -12,11 +12,11 @@ label {
     border-radius: 15px;
 }
 
-/* body{
+body{
 
     background-color: rgb(160, 150, 150);
    
-} */
+}
 
 nav {
     background-color: rgb(207, 191, 191);
@@ -25,6 +25,14 @@ nav {
     align-items: center;
     background-color: antiquewhite;
    
+}
+
+.tabela {
+
+   
+    height: 50vh;
+    
+    
 }
 
 table {
@@ -53,16 +61,24 @@ td {
  a {
     text-decoration: none;
     color: black;
+    text-align: center;
+   
 } 
 
 
  .botao-add {
 
-    background-color: #3498db;
+    background-color: rgb(29, 185, 8) ;
     font: normal 10pt Arial;
     color: white;
-    width: 10px;
-    height: 10px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 25%;
+    padding-top: 5px;
+    
+
     
 } 
 
