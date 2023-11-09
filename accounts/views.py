@@ -10,7 +10,7 @@ def user_login(request):
         userVerify = auth.authenticate(request, username=user, password=password)
        
         if userVerify == None:
-            messages.info(request, "Usuário ou senha incorretos.")
+            messages.info(request, " Opss, usuário ou senha incorretos.")
             return redirect('login')
 
         else:

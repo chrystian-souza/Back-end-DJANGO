@@ -8,7 +8,9 @@
 </head>
 <body>
     {% if messages %}
-        <h3>{{messages}}</h3>
+        {% for message in messages %}
+        <h3 class="vermelho">{{message}}</h3>
+        {% endfor %}
     {% endif %}
     <form action="" method="POST"> {% csrf_token %}
 
