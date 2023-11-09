@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # MY APPS ############################################AQUI#####foi consigurado para rodar os apps que foram criados
-    'stockADS'
+    'stockADS',
+    'accounts'
 ]
 
 MIDDLEWARE = [

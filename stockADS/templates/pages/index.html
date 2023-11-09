@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="{% static 'css/global.css' %}">   <!-- ctrl + f5 para atualizar a pagina e limpar o cache * -->
 </head>
 <body>
+
+    <h1>{{user}}</h1>
+
     <header>
         <nav>
            <label  for="">EstoqueADS</label> 
            <form action="{% url 'search-product' %}">
                 <input type="search" name="q">
                 <button >Buscar</button> 
-                <button>testeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</button>
             </form> 
         </nav>
     </header>
     <main>
         <div class="botao-add"> 
+                {% if user.is_authenticated %}
             <a href="{% url 'add_product' %}">Adicionar</a>
+                {% endif %}
         </div>
         <div class="tabela">
            
