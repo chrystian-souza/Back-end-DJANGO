@@ -19,3 +19,5 @@ def user_login(request):
 
     else:
         return render(request, 'pages/login.html')
+    
+

@@ -1,21 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
     <title>Document</title>
 </head>
 <body>
-    {% if messages %}
-        {% for message in messages %}
-        <h3 class="vermelho">{{message}}</h3>
-        {% endfor %}
-    {% endif %}
+    
     <form action="" method="POST"> {% csrf_token %}
 
-        <input type="text" name="username" id="">
-        <input type="password" name="password">
+        {% if messages %}
+        {% for message in messages %}
+        <h3 class="msglogin">{{message}}</h3>
+        {% endfor %}
+        {% endif %}
+        <input type="text" name="username" id="" placeholder=" Usuário"> 
+        <input type="password" name="password" placeholder=" Senha">
         <button type="submit">Entrar</button>
 
     </form>
