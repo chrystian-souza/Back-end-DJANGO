@@ -15,30 +15,31 @@ body {
     color: black;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    background-color: rgba(241, 101, 7, 0.568);
+    
+    background-color: rgb(8, 8, 8);
 }
 
 form {
 
     display: flex;
-    color: black;
+    color: rgb(255, 250, 250);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background-color:antiquewhite;
-    width: 30%;
-    height: 30vh;
+    background-color:rgb(118, 5, 248);
+    width: 50%;
+    height: 100vh;
 
 }
 
+
 button {
 
-    background-color: rgba(241, 101, 7, 0.568);
-    color: rgb(5, 5, 5);
+    background-color: rgba(35, 49, 247, 0.568);
+    color: rgb(250, 250, 250);
     width: 20%;
-    height: 10hv;
+    height: 5vh;
     
 
 }
@@ -48,4 +49,23 @@ input {
     width: 50%;
     height: 5vh;
 
+}
+/* 
+.img-login {
+
+   
+    width: 50%;
+    height: 100vh;
+    background-color: rebeccapurple;
+    margin: 0;
+    padding: 0;
+   
+} */
+
+img {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
 }
